@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alice Braz — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+  <div class="cursor-glow" id="glow"></div>
+
+  <nav>
+    <div class="nav-logo">AB</div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home',this)" class="active">Home</a></li>
+      <li><a href="#" onclick="showPage('sobre',this)">Sobre</a></li>
+      <li><a href="#" onclick="showPage('academica',this)">Acadêmica</a></li>
+      <li><a href="#" onclick="showPage('profissional',this)">Profissional</a></li>
+      <li><a href="#" onclick="showPage('projetos',this)">Projetos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ HOME ══ -->
+  <section id="home" class="active">
+    <div class="home-noise"></div>
+    <div class="home-grid"></div>
+    <div class="home-content">
+      <div class="home-label animate a1">Disponível para oportunidades</div>
+      <h1 class="hero-name animate a2">
+        Alice<br>
+        <em>da Silva</em><br>
+        <span>Braz</span>
+      </h1>
+      <p class="hero-sub animate a3">
+        Estudante de Sistemas para Internet no 3º período. Apaixonada por desenvolvimento web, UX e tecnologia.
+      </p>
+      <div class="hero-cta animate a4">
+        <a class="btn btn-primary" href="#"
+          onclick="showPage('projetos',document.querySelector('.nav-links a:last-child'))">Ver Projetos</a>
+        <a class="btn btn-outline" href="#"
+          onclick="showPage('sobre',document.querySelectorAll('.nav-links a')[1])">Sobre Mim</a>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll</div>
+  </section>
+
+  <!-- ══ SOBRE ══ -->
+  <section id="sobre">
+    <div class="page-header animate a1">
+      <div class="page-tag">01 — Sobre</div>
+      <h2 class="page-title">Quem sou eu</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-bio animate a2">
+        <p>Olá! Sou <strong>Alice da Silva Braz</strong>, estudante do curso de <strong>Sistemas para Internet</strong>,
+          cursando o 3º período. Tenho grande entusiasmo pelo desenvolvimento de aplicações web modernas e pela criação
+          de experiências digitais intuitivas e acessíveis.</p>
+        <p>Minha jornada na tecnologia começou com curiosidade e se transformou em paixão. Gosto de trabalhar com
+          <strong>Gestão de Projeos, lingugem de java e PFE, tenho poucas habilidades na parte de react, mas tabém gosto</strong>, sempre buscando boas práticas e código limpo.</p>
+        <p>Fora da tela, gosto de explorar design de interfaces, contribuir com projetos open-source e estudar novas
+          tendências em tecnologia.</p>
+      </div>
+      <div>
+        <div class="tech-section animate a3">
+          <h3>Habilidades Técnicas</h3>
+          <div style="margin-bottom:1.5rem">
+            <div class="stat-row">
+              <div class="stat-label"><span>JavaScript / TypeScript</span><span>75%</span></div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width:75%"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-label"><span>React / Next.js</span><span>70%</span></div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width:70%"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-label"><span>HTML / CSS</span><span>85%</span></div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width:85%"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-label"><span>Node.js / Express</span><span>60%</span></div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-label"><span>SQL / MySQL</span><span>65%</span></div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width:65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-section animate a4">
+      <h3>Tecnologias & Ferramentas</h3>
+      <div class="tech-grid">
+        <div class="tech-chip"><span class="dot"></span>React</div>
+        <div class="tech-chip"><span class="dot"></span>Next.js</div>
+        <div class="tech-chip"><span class="dot"></span>TypeScript</div>
+        <div class="tech-chip"><span class="dot green"></span>Node.js</div>
+        <div class="tech-chip"><span class="dot green"></span>Express</div>
+        <div class="tech-chip"><span class="dot coral"></span>MySQL</div>
+        <div class="tech-chip"><span class="dot coral"></span>MongoDB</div>
+        <div class="tech-chip"><span class="dot"></span>TailwindCSS</div>
+        <div class="tech-chip"><span class="dot"></span>Git / GitHub</div>
+        <div class="tech-chip"><span class="dot green"></span>REST APIs</div>
+        <div class="tech-chip"><span class="dot coral"></span>Figma</div>
+        <div class="tech-chip"><span class="dot"></span>VS Code</div>
+      </div>
+    </div>
+
+    <div
+      style="margin-top:2.5rem;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem"
+      class="animate a4">
+      <div class="page-tag" style="margin-bottom:1rem">Módulos deste App</div>
+      <div class="tech-grid">
+        <div class="tech-chip"><span class="dot"></span>React 18</div>
+        <div class="tech-chip"><span class="dot"></span>Next.js 14</div>
+        <div class="tech-chip"><span class="dot green"></span>GitHub REST API</div>
+        <div class="tech-chip"><span class="dot coral"></span>CSS Variables</div>
+        <div class="tech-chip"><span class="dot"></span>Google Fonts</div>
+        <div class="tech-chip"><span class="dot green"></span>Fetch API</div>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-top:1rem">
+        Este portfólio foi construído com <strong style="color:var(--text)">React + Next.js</strong>, utilizando a
+        <strong style="color:var(--accent)">GitHub REST API</strong> para exibir os repositórios reais na seção de
+        Projetos. O design utiliza CSS puro com variáveis customizadas, fontes do Google Fonts (DM Serif Display, DM
+        Mono, Outfit) e animações CSS para uma experiência fluida.
+      </p>
+    </div>
+
+    <div class="section-footer">
+      <span class="sf-text">alice.braz@email.com</span>
+      <div class="sf-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACADÊMICA ══ -->
+  <section id="academica">
+    <div class="page-header animate a1">
+      <div class="page-tag">02 — Experiência</div>
+      <h2 class="page-title">Formação<br><em>Acadêmica</em></h2>
+    </div>
+    <div class="timeline animate a2">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2023 — Presente</div>
+        <div class="tl-title">Tecnologia em Sistemas para Internet</div>
+        <div class="tl-inst">Faculdade — Recife, PE</div>
+        <div class="tl-desc">Curso superior de tecnologia com foco em desenvolvimento web full-stack, banco de dados,
+          redes de computadores e engenharia de software. Atualmente no 3º período com desempenho acima da média.</div>
+        <div class="tl-tags">
+          <span class="tl-tag">React</span><span class="tl-tag">Node.js</span><span class="tl-tag">SQL</span><span
+            class="tl-tag">Redes</span><span class="tl-tag">POO</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2022</div>
+        <div class="tl-title">Curso de Desenvolvimento Web</div>
+        <div class="tl-inst">Plataforma Online (Udemy / Rocketseat)</div>
+        <div class="tl-desc">Formação completa em desenvolvimento web abrangendo HTML5, CSS3, JavaScript ES6+, React e
+          introdução ao back-end com Node.js. Mais de 80 horas de conteúdo prático.</div>
+        <div class="tl-tags">
+          <span class="tl-tag">HTML5</span><span class="tl-tag">CSS3</span><span class="tl-tag">JavaScript</span><span
+            class="tl-tag">React</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2021 — 2022</div>
+        <div class="tl-title">Ensino Médio Completo</div>
+        <div class="tl-inst">Escola Estadual — Recife, PE</div>
+        <div class="tl-desc">Conclusão do ensino médio com participação em olimpíadas de matemática e em projetos de
+          iniciação científica na área de tecnologia.</div>
+        <div class="tl-tags">
+          <span class="tl-tag">Lógica</span><span class="tl-tag">Matemática</span><span class="tl-tag">Ciências</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2022</div>
+        <div class="tl-title">Inglês Técnico para TI</div>
+        <div class="tl-inst">Curso Extracurricular</div>
+        <div class="tl-desc">Aperfeiçoamento de leitura e escrita técnica em inglês voltada para documentação de
+          software, leitura de artigos científicos e comunicação em projetos open-source.</div>
+        <div class="tl-tags">
+          <span class="tl-tag">Inglês</span><span class="tl-tag">Documentação</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ PROFISSIONAL ══ -->
+  <section id="profissional">
+    <div class="page-header animate a1">
+      <div class="page-tag">03 — Experiência</div>
+      <h2 class="page-title">Trajetória<br><em>Profissional</em></h2>
+    </div>
+
+    <div class="animate a2">
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Desenvolvedora Web — Freelancer</div>
+          <div class="exp-period">2023 — Presente</div>
+        </div>
+        <div class="exp-company">Autônoma / Projetos independentes</div>
+        <div class="exp-desc">
+          Desenvolvimento de landing pages, sites institucionais e pequenas aplicações web para clientes locais.
+          Trabalho com levantamento de requisitos, prototipação no Figma e entrega final utilizando React e CSS moderno.
+          Gestão de projetos de forma autônoma, incluindo comunicação com cliente e prazo de entrega.
+        </div>
+        <div class="tl-tags" style="margin-top:.75rem">
+          <span class="tl-tag">React</span><span class="tl-tag">CSS</span><span class="tl-tag">Figma</span><span
+            class="tl-tag">Freelance</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Monitora de Informática</div>
+          <div class="exp-period">2022 — 2023</div>
+        </div>
+        <div class="exp-company">Escola Estadual — Recife, PE</div>
+        <div class="exp-desc">
+          Suporte técnico aos alunos em laboratório de informática, auxiliando professores na aplicação de atividades
+          digitais. Ministrei minicursos de uso básico de planilhas, editores de texto e navegação segura na internet
+          para turmas do ensino fundamental.
+        </div>
+        <div class="tl-tags" style="margin-top:.75rem">
+          <span class="tl-tag">Suporte</span><span class="tl-tag">Ensino</span><span class="tl-tag">Office</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Estágio em TI (Jovem Aprendiz)</div>
+          <div class="exp-period">2021 — 2022</div>
+        </div>
+        <div class="exp-company">Empresa de Comércio Local — Recife, PE</div>
+        <div class="exp-desc">
+          Primeiro contato com ambiente corporativo de TI. Auxiliei na manutenção de planilhas de controle interno,
+          organização de arquivos digitais e suporte básico a usuários. Aprendi sobre processos empresariais e
+          desenvolvei habilidades de comunicação e trabalho em equipe.
+        </div>
+        <div class="tl-tags" style="margin-top:.75rem">
+          <span class="tl-tag">Excel</span><span class="tl-tag">Suporte</span><span class="tl-tag">Aprendiz</span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:1.25rem 1.5rem;margin-top:1rem"
+      class="animate a3">
+      <p style="font-size:.9rem;color:var(--muted)">
+        💡 <strong style="color:var(--text)">Em busca de oportunidades:</strong> Estou aberta a estágios e projetos na
+        área de desenvolvimento web front-end ou full-stack. Comprometida, proativa e em constante aprendizado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ PROJETOS ══ -->
+  <section id="projetos">
+    <div class="page-header animate a1">
+      <div class="page-tag">04 — GitHub API</div>
+      <h2 class="page-title">Projetos<br><em>Desenvolvidos</em></h2>
+    </div>
+    <p style="color:var(--muted);margin-bottom:2rem;font-size:.95rem" class="animate a2">
+      Repositórios carregados em tempo real via <strong
+        style="color:var(--accent);font-family:'DM Mono',monospace">GitHub REST API</strong>. Projetos acadêmicos,
+      pessoais e freelance.
+    </p>
+    <div class="projects-grid animate a3" id="projects-grid">
+      <div class="proj-loading">
+        <p>Conectando à <span>GitHub API</span>...</p>
+        <p style="margin-top:.5rem;font-size:.7rem;opacity:.6">github.com/octocat</p>
+      </div>
+    </div>
+
+    <!-- PROJETOS EXTRAS (fixos) -->
+    <h3 style="font-family:'DM Serif Display',serif;font-size:1.5rem;margin:3rem 0 1.5rem;color:var(--muted)">
+      Projetos <em>Acadêmicos</em>
+    </h3>
+    <div class="projects-grid">
+      <div class="proj-card">
+        <div class="proj-lang"><span class="lang-dot" style="background:var(--accent)"></span>JavaScript / React</div>
+        <div class="proj-name">Portfólio Pessoal</div>
+        <div class="proj-desc">Este próprio portfólio! Desenvolvido com React + Next.js, integrando a GitHub API para
+          exibição dinâmica de repositórios. CSS customizado com tema dark.</div>
+        <div class="proj-stats">
+          <span class="proj-stat">⭐ Destaque</span>
+          <span class="proj-stat">📁 3º Período</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-lang"><span class="lang-dot" style="background:var(--accent3)"></span>Node.js / Express</div>
+        <div class="proj-name">API REST — Cadastro de Usuários</div>
+        <div class="proj-desc">API RESTful desenvolvida com Node.js e Express, com banco de dados MySQL. CRUD completo,
+          autenticação JWT e documentação com Swagger.</div>
+        <div class="proj-stats">
+          <span class="proj-stat">⭐ 2</span>
+          <span class="proj-stat">📁 Back-end</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-lang"><span class="lang-dot" style="background:var(--accent2)"></span>HTML / CSS / JS</div>
+        <div class="proj-name">Sistema de Agendamento Online</div>
+        <div class="proj-desc">Front-end de um sistema de agendamento com calendário interativo, desenvolvido para um
+          salão de beleza local como projeto freelance.</div>
+        <div class="proj-stats">
+          <span class="proj-stat">⭐ 3</span>
+          <span class="proj-stat">📁 Freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-footer animate a4">
+      <span class="sf-text">Todos os projetos em github.com/alice-braz</span>
+      <a class="btn btn-outline" href="https://github.com" target="_blank"
+        style="font-size:.85rem;padding:.5rem 1.2rem">Ver GitHub →</a>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
